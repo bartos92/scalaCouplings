@@ -1,0 +1,66 @@
+Compiled from "Closure6.scala"
+public class Closure6 {
+  public int x();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field x:I
+       4: ireturn
+
+  public void x_$eq(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #18                 // Field x:I
+       5: return
+
+  public void partialApp(int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: invokedynamic #49,  0             // InvokeDynamic #0:apply$mcV$sp:(LClosure6;II)Lscala/runtime/java8/JFunction0$mcV$sp;
+       8: pop
+       9: return
+
+  public void addOne();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #52                 // Method x:()I
+       5: iconst_1
+       6: iadd
+       7: invokevirtual #54                 // Method x_$eq:(I)V
+      10: return
+
+  public int getX();
+    Code:
+       0: aload_0
+       1: invokevirtual #52                 // Method x:()I
+       4: ireturn
+
+  public static final void $anonfun$partialApp$1(Closure6, int, int);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #52                 // Method x:()I
+       5: iload_1
+       6: iload_2
+       7: iadd
+       8: iadd
+       9: invokevirtual #54                 // Method x_$eq:(I)V
+      12: getstatic     #64                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      15: aload_0
+      16: invokevirtual #52                 // Method x:()I
+      19: invokestatic  #70                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      22: invokevirtual #74                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      25: return
+
+  public Closure6();
+    Code:
+       0: aload_0
+       1: invokespecial #77                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #18                 // Field x:I
+       9: return
+}

@@ -1,0 +1,52 @@
+Compiled from "Closure4.scala"
+public class Closure4 {
+  public int x();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field x:I
+       4: ireturn
+
+  public void x_$eq(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #18                 // Field x:I
+       5: return
+
+  public void printer();
+    Code:
+       0: aload_0
+       1: invokedynamic #46,  0             // InvokeDynamic #0:apply$mcV$sp:(LClosure4;)Lscala/runtime/java8/JFunction0$mcV$sp;
+       6: pop
+       7: return
+
+  public int getX();
+    Code:
+       0: aload_0
+       1: invokevirtual #49                 // Method x:()I
+       4: ireturn
+
+  public static final void $anonfun$printer$1(Closure4);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #49                 // Method x:()I
+       5: iconst_1
+       6: iadd
+       7: invokevirtual #52                 // Method x_$eq:(I)V
+      10: getstatic     #58                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      13: aload_0
+      14: invokevirtual #49                 // Method x:()I
+      17: invokestatic  #64                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      20: invokevirtual #68                 // Method scala/Predef$.println:(Ljava/lang/Object;)V
+      23: return
+
+  public Closure4();
+    Code:
+       0: aload_0
+       1: invokespecial #71                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #18                 // Field x:I
+       9: return
+}
